@@ -58,5 +58,3 @@ def resumen(df: pd.DataFrame, target_col: str = None):
     if 1 in df[target_col].unique():
         fraud_rate = (df[target_col] == 1).mean()
         print(f"Tasa de fraude: {fraud_rate:.4%}")
-
-
